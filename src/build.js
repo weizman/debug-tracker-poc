@@ -5,8 +5,6 @@ const babelTraverse = require ('@babel/traverse').default;
 const util = require('./util');
 const babel = require('./babel');
 
-console.log(111, util.removeUseStrict)
-
 function walk(astree, variables) {
     babelTraverse(astree, {
         FunctionDeclaration (path) {
