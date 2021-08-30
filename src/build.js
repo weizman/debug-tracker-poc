@@ -34,10 +34,10 @@ function build(code, onFunctionDebugged, options = {strictMode: false}) {
         let callstack = [], callargs = [];
         setTimeout(() => { callstack = [], callargs = []; });
         return (function(name, args = []) {
-            const dummyFunc = function () {};
+            const dummy = /./;
             const firstDebugTime = new Date();
             args = Array.prototype.slice.call(args);
-            dummyFunc.toString = function () {
+            dummy.toString = function () {
                 if (callstack[callstack.length - 1] === name) {
                     let same = true;
                     for (let i = 0; i < args.length; i++) {
@@ -57,7 +57,7 @@ function build(code, onFunctionDebugged, options = {strictMode: false}) {
                     last_timestamp: new Date()
                 });
             };
-            return dummyFunc;
+            return dummy;
         });
     }) + `());`).replace('__on_function_debugged__temp_name', variables.onFunctionDebugged) + (!options.strictMode ? util.removeUseStrict(res.code) : res.code);
 };
