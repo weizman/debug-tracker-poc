@@ -1,5 +1,5 @@
 {
-  "name": "debug-tracker",
+  "name": "debug-tracker-poc",
   "version": "1.0.0",
   "description": "track every function that was debugged",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/weizman/debug-tracker.git"
+    "url": "git+https://github.com/weizman/debug-tracker-poc.git"
   },
   "author": "weizman",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/weizman/debug-tracker/issues"
+    "url": "https://github.com/weizman/debug-tracker-poc/issues"
   },
-  "homepage": "https://github.com/weizman/debug-tracker#readme",
+  "homepage": "https://github.com/weizman/debug-tracker-poc#readme",
   "dependencies": {
     "@babel/core": "^7.9.0",
     "@babel/parser": "^7.9.4",

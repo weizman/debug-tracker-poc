@@ -1,22 +1,22 @@
-# debug-tracker
+# debug-tracker-poc
 
 ### this package is a POC demonstrating the ability described in this [blog post](https://weizman.github.io/?javascript-anti-debugging-some-next-level-shit-part-2)
 
 ## install
 
-`npm install xxx`/`yarn add xxx`
+`npm install debug-tracker-poc`/`yarn add debug-tracker-poc`
 
 ## usage
 
 ```javascript
-const track = require('xxx');
+const track = require('debug-tracker-poc');
 const code = track(js, cb);
 ```
 
 ## example
 
 ```javascript
-const track = require('xxx');
+const track = require('debug-tracker-poc');
 
 const js = `
 function y(b) {
